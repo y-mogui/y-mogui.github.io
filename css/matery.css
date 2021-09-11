@@ -518,7 +518,7 @@ header .go-back {
     position: relative;
     padding-left: 5px;
     padding-right: 5px;
-    z-index: 1;
+    z-index: 1;/* 指定堆叠顺序. */
     height: 56px;
 }
 
