@@ -108,22 +108,11 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/contact" class="waves-effect waves-light">
+    <a href="/" class="waves-effect waves-light">
       
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      <i class="fa fa-language" style="zoom: 0.6;"></i>
       
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
+      <span>Language</span>
     </a>
     
   </li>
@@ -211,22 +200,11 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/contact" class="waves-effect waves-light">
+		<a href="/" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-comments"></i>
+			    <i class="fa-fw fa fa-language"></i>
 			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
+			Language
 		</a>
           
         </li>
@@ -486,17 +464,14 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd</span><br><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure>
 <h6 id="1-创建独立博客项目文件夹"><a href="#1-创建独立博客项目文件夹" class="headerlink" title="1. 创建独立博客项目文件夹"></a>1. 创建独立博客项目文件夹</h6><p>安装完成后，关掉之前的Git Bash窗口。在本地创建一个与Repository中博客项目同名的文件夹username.github.io在文件夹上点击鼠标右键，选择 Git bash here<br>⚠在进行博客搭建工作时，每次使用命令都要在username.github.io文件夹目录下。</p>
 <h6 id="2-创建博客所需文件"><a href="#2-创建博客所需文件" class="headerlink" title="2. 创建博客所需文件"></a>2. 创建博客所需文件</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
-<p><strong>上一步中我的文件夹放在了需要管理员权限的D盘中，因此hexo安装失败，提示Permission denied，更换为E盘就好了</strong></p>
-<h6 id="3-安装依赖包"><a href="#3-安装依赖包" class="headerlink" title="3. 安装依赖包"></a>3. 安装依赖包</h6><p>⚠如果npm没反应可以安装淘宝镜像，参考：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/31eb84182156">HEXO 趟坑笔记</a></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<p><strong>我安装了Node.js后更改了文件位置，需要重新配置环境变量，否则会安装失败</strong></p>
+<p><strong>上一步中我的文件夹放在了需要管理员权限的D盘中，因此hexo安装失败，第三行提示Permission denied，更换为E盘就好了</strong><br><a target="_blank" rel="noopener" href="https://imgtu.com/i/4ni3v9"><img src="https://z3.ax1x.com/2021/09/16/4ni3v9.jpg"></a></p>
+<h6 id="3-安装依赖包"><a href="#3-安装依赖包" class="headerlink" title="3. 安装依赖包"></a>3. 安装依赖包</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p>⚠如果npm没反应可以安装淘宝镜像，参考：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/31eb84182156">HEXO 趟坑笔记</a><br><strong>如果安装了Node.js后更改了文件位置，需要重新配置环境变量，否则会安装失败</strong></p>
 <h6 id="4-确保git部署"><a href="#4-确保git部署" class="headerlink" title="4. 确保git部署"></a>4. 确保git部署</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <h6 id="5-本地保存-g-和预览-s"><a href="#5-本地保存-g-和预览-s" class="headerlink" title="5. 本地保存(g)和预览(s)"></a>5. 本地保存(g)和预览(s)</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
 <p>按照指示在浏览器输入 localhost：4000 可以预览效果<br><a target="_blank" rel="noopener" href="https://git-scm.com/">如何更换主题？（链接未更新）</a></p>
-<h2 id="将博客部署到username-github-io"><a href="#将博客部署到username-github-io" class="headerlink" title="将博客部署到username.github.io"></a>将博客部署到username.github.io</h2><h6 id="1-复制SSH码"><a href="#1-复制SSH码" class="headerlink" title="1. 复制SSH码"></a>1. 复制SSH码</h6><p>进入 Github 个人主页中的 Repository，复制新建的独立博客项目username.github.io的 SSH码</p>
-<h6 id="2-编辑整站配置文件"><a href="#2-编辑整站配置文件" class="headerlink" title="2. 编辑整站配置文件"></a>2. 编辑整站配置文件</h6><p>打开 D:/username.github.io/_config.yml,把刚刚复制的SSH码粘贴到repository：后面。<br>⚠别忘了冒号后要空一格。<br><strong>我在搜索文档的时候，搜不到示例关键字repository，后来通过搜索deploy发现只生成了</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br></pre></td></tr></table></figure>
-<p><strong>后面的需要自己补完整。</strong></p>
+<h2 id="将博客部署到username-github-io"><a href="#将博客部署到username-github-io" class="headerlink" title="将博客部署到username.github.io"></a>将博客部署到username.github.io</h2><h6 id="1-复制SSH码"><a href="#1-复制SSH码" class="headerlink" title="1. 复制SSH码"></a>1. 复制SSH码</h6><p>进入 Github 个人主页中的 Repository，复制新建的独立博客项目username.github.io的 SSH码<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/4nmJAA"><img src="https://z3.ax1x.com/2021/09/16/4nmJAA.jpg"></a></p>
+<h6 id="2-编辑整站配置文件"><a href="#2-编辑整站配置文件" class="headerlink" title="2. 编辑整站配置文件"></a>2. 编辑整站配置文件</h6><p>打开 D:/username.github.io/_config.yml,把刚刚复制的SSH码粘贴到repository：后面。<br>⚠别忘了冒号后要空一格。<br><strong>我在搜索文档的时候，搜不到示例关键字repository，后来通过搜索deploy发现只生成了</strong><br><a target="_blank" rel="noopener" href="https://imgtu.com/i/4nkwXd"><img src="https://z3.ax1x.com/2021/09/16/4nkwXd.jpg"></a><br><strong>后面的需要自己补完整。</strong><br><a target="_blank" rel="noopener" href="https://imgtu.com/i/4nAqat"><img src="https://z3.ax1x.com/2021/09/16/4nAqat.jpg"></a></p>
 <h6 id="3-执行下列指令即可完成部署"><a href="#3-执行下列指令即可完成部署" class="headerlink" title="3. 执行下列指令即可完成部署"></a>3. 执行下列指令即可完成部署</h6><p>⚠每次修改本地文件后，需要 hexo g 才能保存。每次使用命令时，都要在你的博客文件夹目录下：<br>在D:/username.github.io/ 右键打开 Git Bash Here</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g  //(g = generate 修改生产)</span><br><span class="line">$ hexo s  //(s = server   修改预览)</span><br><span class="line">$ hexo d  //(d = deploy   修改部署)</span><br></pre></td></tr></table></figure>
 <p>⚠如果在配置 SSH key 时设置了密码，执行 hexo d 命令上传文件时需要输入密码进行确认。</p>
